@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.TextEditor",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "41beta",
+    "runtime-version" : "41",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-text-editor",
     "finish-args" : [
@@ -65,7 +65,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "commit" : "8442d6097b36c17e87582525ceab3ce3d5bccd48"
+                    "commit" : "c3a5641f714f84929e5a0f948d4d7a5274018ff6"
                 }
             ]
         },
@@ -76,7 +76,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/gtksourceview.git",
-                    "commit": "2a90c77529d873de836a1b516a131f2cf04eab72"
+                    "commit": "7de47430d0962f23f94ae3f2bccb1fc558574685"
                 }
             ]
         },
@@ -87,8 +87,8 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/chergert/gnome-text-editor.git",
-                    "tag" : "41.beta1",
-                    "commit" : "3508525d9285143d24c98ee27475e2d7809fbc59"
+                    "tag" : "41.0",
+                    "commit" : "23ae917be4e20e0e420c49ffdbc028be6ad9556b"
                 }
             ]
         }
