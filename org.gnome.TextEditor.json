@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.TextEditor",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "41",
+    "runtime-version" : "41rc",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-text-editor",
     "finish-args" : [
@@ -31,10 +31,6 @@
         {
             "name" : "libsass",
             "buildsystem" : "meson",
-            "builddir" : true,
-            "config-opts" : [
-                "--libdir=/app/lib"
-            ],
             "sources" : [
                 {
                     "type" : "git",
@@ -46,10 +42,6 @@
         {
             "name" : "sassc",
             "buildsystem" : "meson",
-            "builddir" : true,
-            "config-opts" : [
-                "--libdir=/app/lib"
-            ],
             "sources" : [
                 {
                     "type" : "git",
@@ -65,7 +57,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "commit" : "c3a5641f714f84929e5a0f948d4d7a5274018ff6"
+                    "commit" : "63d2d673fcf7eb390f7d525c721048639175d044"
                 }
             ]
         },
@@ -76,7 +68,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GNOME/gtksourceview.git",
-                    "commit": "7de47430d0962f23f94ae3f2bccb1fc558574685"
+                    "commit": "8f132de6d4128c42b6177617772d9ac6f62dace1"
                 }
             ]
         },
@@ -87,8 +79,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/chergert/gnome-text-editor.git",
-                    "tag" : "41.0",
-                    "commit" : "23ae917be4e20e0e420c49ffdbc028be6ad9556b"
+                    "commit" : "53695a254713aff6d45ab7923ff6abb7085e8094"
                 }
             ]
         }
