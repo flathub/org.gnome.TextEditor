@@ -78,7 +78,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/chergert/gnome-text-editor.git",
-                    "commit" : "037777592bf6524edacfe43a1af70aec4115ea64"
+                    "commit" : "9cdf63946736be22bd855c2f410079b7fa237443"
                 }
             ]
         }
