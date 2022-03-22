@@ -36,6 +36,10 @@
                     "type" : "archive",
                     "url" : "https://download.gnome.org/sources/gnome-text-editor/42/gnome-text-editor-42.0.tar.xz",
                     "sha256" : "0e32140ee1c13428563bcd5f784e61ee22ffd1ad27d8c02283b4358a81dfab50"
+                },
+                {
+                    "type" : "patch",
+                    "path" : "0001-appdata-fix-appstream-validation.patch"
                 }
             ]
         }
