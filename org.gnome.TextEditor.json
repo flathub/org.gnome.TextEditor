@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.TextEditor",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "41",
+    "runtime-version" : "42",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-text-editor",
     "finish-args" : [
@@ -29,57 +29,13 @@
     ],
     "modules" : [
         {
-            "name" : "libsass",
-            "buildsystem" : "meson",
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://github.com/lazka/libsass.git",
-                    "commit" : "302397c0c8ae2d7ab02f45ea461c2c3d768f248e"
-                }
-            ]
-        },
-        {
-            "name" : "sassc",
-            "buildsystem" : "meson",
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://github.com/lazka/sassc.git",
-                    "commit" : "82803377c33247265d779af034eceb5949e78354"
-                }
-            ]
-        },
-        {
-            "name" : "libadwaita",
-            "buildsystem" : "meson",
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/libadwaita.git",
-                    "commit" : "63d2d673fcf7eb390f7d525c721048639175d044"
-                }
-            ]
-        },
-        {
-            "name" : "gtksourceview",
-            "buildsystem" : "meson",
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GNOME/gtksourceview.git",
-                    "commit": "8f132de6d4128c42b6177617772d9ac6f62dace1"
-                }
-            ]
-        },
-        {
             "name" : "gnome-text-editor",
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/chergert/gnome-text-editor.git",
-                    "commit" : "9cdf63946736be22bd855c2f410079b7fa237443"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/gnome-text-editor/42/gnome-text-editor-42.0.tar.xz",
+                    "sha256" : "0e32140ee1c13428563bcd5f784e61ee22ffd1ad27d8c02283b4358a81dfab50"
                 }
             ]
         }
