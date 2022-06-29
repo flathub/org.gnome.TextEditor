@@ -34,8 +34,8 @@
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-text-editor/42/gnome-text-editor-42.1.tar.xz",
-                    "sha256" : "a3c8508033bfb63a8b48a062ac1e67b2c333ba0153879b38c661968a103ad15c"
+                    "url" : "https://download.gnome.org/sources/gnome-text-editor/42/gnome-text-editor-42.2.tar.xz",
+                    "sha256" : "e56d4a8cdcbce8a8f1c0881b45de799f8b25205ec0cbf2269e532025761cc5da"
                 }
             ]
         }
