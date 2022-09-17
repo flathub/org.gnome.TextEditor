@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.TextEditor",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "41beta",
+    "runtime-version" : "43beta",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-text-editor",
     "finish-args" : [
@@ -33,10 +33,14 @@
             "buildsystem" : "meson",
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/chergert/gnome-text-editor.git",
-                    "tag" : "41.beta1",
-                    "commit" : "3508525d9285143d24c98ee27475e2d7809fbc59"
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/gnome-text-editor/43/gnome-text-editor-43.0.tar.xz",
+                    "sha256": "b0fbbfcb17c6abc65dfb1ef5ff2fb1cadc1aa9536cd5e8589814b87e7812aa61",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "gnome-text-editor",
+                        "stable-only": false
+                    }
                 }
             ]
         }
