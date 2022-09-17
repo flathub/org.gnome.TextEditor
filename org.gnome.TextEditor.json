@@ -6,11 +6,13 @@
     "command" : "gnome-text-editor",
     "finish-args" : [
         "--device=dri",
+        "--filesystem=host",
+        "--filesystem=xdg-run/gvfsd",
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--filesystem=host",
-        "--filesystem=xdg-run/gvfsd",
+        "--talk-name=org.freedesktop.FileManager1",
+        "--talk-name=org.gtk.vfs",
         "--talk-name=org.gtk.vfs.*"
     ],
     "cleanup" : [
