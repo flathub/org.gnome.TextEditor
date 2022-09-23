@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gnome.TextEditor",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "42",
+    "runtime-version" : "43",
     "sdk" : "org.gnome.Sdk",
     "command" : "gnome-text-editor",
     "finish-args" : [
@@ -9,6 +9,7 @@
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
+        "--talk-name=org.freedesktop.FileManager1",
         "--filesystem=host",
         "--filesystem=xdg-run/gvfsd",
         "--talk-name=org.gtk.vfs.*"
@@ -29,13 +30,25 @@
     ],
     "modules" : [
         {
+            "name" : "libeditorconfig",
+            "buildsystem" : "cmake",
+            "config-opts" : [ "-DBUILD_DOCUMENTATION=OFF", "-DINSTALL_HTML_DOC=OFF" ],
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/editorconfig/editorconfig-core-c.git",
+                    "tag" : "v0.12.5"
+                }
+            ]
+        },
+        {
             "name" : "gnome-text-editor",
             "buildsystem" : "meson",
             "sources" : [
                 {
                     "type" : "archive",
-                    "url" : "https://download.gnome.org/sources/gnome-text-editor/42/gnome-text-editor-42.2.tar.xz",
-                    "sha256" : "e56d4a8cdcbce8a8f1c0881b45de799f8b25205ec0cbf2269e532025761cc5da"
+                    "url" : "https://download.gnome.org/sources/gnome-text-editor/43/gnome-text-editor-43.0.tar.xz",
+                    "sha256" : "b0fbbfcb17c6abc65dfb1ef5ff2fb1cadc1aa9536cd5e8589814b87e7812aa61"
                 }
             ]
         }
