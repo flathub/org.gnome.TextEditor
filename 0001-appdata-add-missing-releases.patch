@@ -1,0 +1,14 @@
+diff --git a/data/org.gnome.TextEditor.appdata.xml.in.in b/data/org.gnome.TextEditor.appdata.xml.in.in
+index 596189b..5f9a7d3 100644
+--- a/data/org.gnome.TextEditor.appdata.xml.in.in
++++ b/data/org.gnome.TextEditor.appdata.xml.in.in
+@@ -29,6 +29,9 @@
+   <translation type="gettext">org.gnome.TextEditor</translation>
+ 
+   <releases>
++    <release version="43.1" date="2022-10-04"/>
++    <release version="43.0" date="2022-09-17"/>
++    <release version="42.2" date="2022-06-12"/>
+     <release version="42.1" date="2022-04-21"/>
+     <release version="42.0" date="2022-03-18"/>
+   </releases>

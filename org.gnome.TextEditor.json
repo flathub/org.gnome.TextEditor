@@ -49,6 +49,10 @@
                     "type" : "archive",
                     "url" : "https://download.gnome.org/sources/gnome-text-editor/43/gnome-text-editor-43.1.tar.xz",
                     "sha256" : "973a4b0deb68f9f91a54a4dd415b6afde9b5ae3ee684bc761471f94290f9f6cb"
+                },
+                {
+                    "type" : "patch",
+                    "path" : "0001-appdata-add-missing-releases.patch"
                 }
             ]
         }
