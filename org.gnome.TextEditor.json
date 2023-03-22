@@ -40,7 +40,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/editorconfig/editorconfig-core-c.git",
-                    "tag": "v0.12.5"
+                    "tag": "v0.12.6"
                 }
             ]
         },
