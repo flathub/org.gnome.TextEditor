@@ -50,8 +50,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-text-editor/45/gnome-text-editor-45.2.tar.xz",
-                    "sha256": "0e2552fdb3025446cdad9d59b13d75df9a653fc3ea1dc43b919e0f6fa8a846ac",
+                    "url": "https://download.gnome.org/sources/gnome-text-editor/45/gnome-text-editor-45.3.tar.xz",
+                    "sha256": "f3ffcb11a92dfd04ba3c3b3d0e667847d4449a21e012ae36f07dda05ac7d3a52",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-text-editor"
