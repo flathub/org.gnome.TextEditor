@@ -56,6 +56,10 @@
                         "type": "gnome",
                         "name": "gnome-text-editor"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/0001-appdata-Remove-redefined-translate-url.patch"
                 }
             ]
         }
