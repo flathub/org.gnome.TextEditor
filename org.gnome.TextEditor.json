@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.TextEditor",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "47",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-text-editor",
     "finish-args": [
@@ -49,9 +49,9 @@
             "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-text-editor/46/gnome-text-editor-46.3.tar.xz",
-                    "sha256": "005b48104a909be66ae07448d2bc5706c7d113781057a24ff6da55bdf324c73d",
+                    "type": "git",
+                    "url": "https://download.gnome.org/sources/gnome-text-editor/47/gnome-text-editor-47.0.tar.xz",
+                    "sha256": "0304961974bdacc7e6e8d146dadc949527df99b2823582c8d1ba8b33d25d4217",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-text-editor"
