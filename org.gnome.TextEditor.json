@@ -49,7 +49,7 @@
             "buildsystem": "meson",
             "sources": [
                 {
-                    "type": "git",
+                    "type": "archive",
                     "url": "https://download.gnome.org/sources/gnome-text-editor/47/gnome-text-editor-47.0.tar.xz",
                     "sha256": "0304961974bdacc7e6e8d146dadc949527df99b2823582c8d1ba8b33d25d4217",
                     "x-checker-data": {
