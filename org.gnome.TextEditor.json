@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.TextEditor",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "46",
+    "runtime-version": "47",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-text-editor",
     "finish-args": [
@@ -31,7 +31,7 @@
     "modules": [
         {
             "name": "libeditorconfig",
-            "buildsystem": "cmake",
+            "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DBUILD_DOCUMENTATION=OFF",
                 "-DINSTALL_HTML_DOC=OFF"
@@ -45,13 +45,32 @@
             ]
         },
         {
+            "name" : "libspelling",
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Dintrospection=disabled",
+                "-Ddocs=false"
+            ],
+            "sources" : [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/libspelling/0.4/libspelling-0.4.0.tar.xz",
+                    "sha256": "00c63970d708a0ef3bcba40e708a06d7030114cb9f210c74583ffad56d36e3dd",
+                    "x-checker-data": {
+                        "type": "gnome",
+                        "name": "libspelling"
+                    }
+                }
+            ]
+        },
+        {
             "name": "gnome-text-editor",
             "buildsystem": "meson",
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-text-editor/46/gnome-text-editor-46.3.tar.xz",
-                    "sha256": "005b48104a909be66ae07448d2bc5706c7d113781057a24ff6da55bdf324c73d",
+                    "url": "https://download.gnome.org/sources/gnome-text-editor/47/gnome-text-editor-47.0.tar.xz",
+                    "sha256": "0304961974bdacc7e6e8d146dadc949527df99b2823582c8d1ba8b33d25d4217",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-text-editor"
