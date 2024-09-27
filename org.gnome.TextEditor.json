@@ -45,13 +45,13 @@
             ]
         },
         {
-            "name" : "libspelling",
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "libspelling",
+            "buildsystem": "meson",
+            "config-opts": [
                 "-Dintrospection=disabled",
                 "-Ddocs=false"
             ],
-            "sources" : [
+            "sources": [
                 {
                     "type": "archive",
                     "url": "https://download.gnome.org/sources/libspelling/0.4/libspelling-0.4.1.tar.xz",
