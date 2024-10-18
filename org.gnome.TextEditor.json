@@ -54,8 +54,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libspelling/0.4/libspelling-0.4.3.tar.xz",
-                    "sha256": "7c0d17720cd9eddbc722a55436d315afa327da6e6732c3b8fac61c8cb70d8328",
+                    "url": "https://download.gnome.org/sources/libspelling/0.4/libspelling-0.4.4.tar.xz",
+                    "sha256": "ac9132c634bb9df911e35b52345aa12126f7ec95e5f07179a980861819787150",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libspelling"
@@ -69,8 +69,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-text-editor/47/gnome-text-editor-47.0.tar.xz",
-                    "sha256": "0304961974bdacc7e6e8d146dadc949527df99b2823582c8d1ba8b33d25d4217",
+                    "url": "https://download.gnome.org/sources/gnome-text-editor/47/gnome-text-editor-47.1.tar.xz",
+                    "sha256": "de95642e2b40ff265feecd86b939e0fd018e4eb2ba499350f2bad2bfcc54010c",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-text-editor"
