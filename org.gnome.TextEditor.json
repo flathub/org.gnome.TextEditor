@@ -69,8 +69,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-text-editor/48/gnome-text-editor-48.1.tar.xz",
-                    "sha256": "52089ba978a665841803b1b69e0e7be75b09a7d54e01e8d0bb29926e0f342437",
+                    "url": "https://download.gnome.org/sources/gnome-text-editor/48/gnome-text-editor-48.2.tar.xz",
+                    "sha256": "fc1f5d475bdd27d4c0439a5b8fe10d6e401b42f1dba3d04b7567839036ee202b",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-text-editor"
