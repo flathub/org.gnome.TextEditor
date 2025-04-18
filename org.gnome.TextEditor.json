@@ -54,8 +54,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/libspelling/0.4/libspelling-0.4.7.tar.xz",
-                    "sha256": "42f130f295f5addb6e9e8e74ccfbb709794bd2dfd021293e2875b9481bbd4e88",
+                    "url": "https://download.gnome.org/sources/libspelling/0.4/libspelling-0.4.8.tar.xz",
+                    "sha256": "277646285818da7b295ef007b2c5ebd815d0930b3ad097505b3ced96965af517",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "libspelling"
