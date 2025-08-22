@@ -40,7 +40,12 @@
                 {
                     "type": "git",
                     "url": "https://github.com/editorconfig/editorconfig-core-c.git",
-                    "tag": "v0.12.9"
+                    "tag": "v0.12.9",
+                    "commit": "e082c947e7f7b14240195d55c060a6e1eda1b0a1",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    }
                 }
             ]
         },
