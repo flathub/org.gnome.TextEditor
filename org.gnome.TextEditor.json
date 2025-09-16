@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.TextEditor",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-text-editor",
     "finish-args": [
@@ -11,6 +11,7 @@
         "--socket=wayland",
         "--talk-name=org.freedesktop.FileManager1",
         "--filesystem=host",
+        "--filesystem=xdg-run/gvfs",
         "--filesystem=xdg-run/gvfsd",
         "--talk-name=org.gtk.vfs.*"
     ],
@@ -74,8 +75,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-text-editor/48/gnome-text-editor-48.3.tar.xz",
-                    "sha256": "3f9e9722394edb4d2145c06d69210b3d3fca5cd2b90d632643be750843d556ba",
+                    "url": "https://download.gnome.org/sources/gnome-text-editor/49/gnome-text-editor-49.0.tar.xz",
+                    "sha256": "8e43b0cfa8152cd3c7630de565de2d6930e887cf2d8b84480fbf853a2bc2c8a6",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-text-editor"
