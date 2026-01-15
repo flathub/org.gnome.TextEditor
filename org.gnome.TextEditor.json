@@ -41,8 +41,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/editorconfig/editorconfig-core-c.git",
-                    "tag": "v0.12.9",
-                    "commit": "e082c947e7f7b14240195d55c060a6e1eda1b0a1",
+                    "tag": "v0.12.10",
+                    "commit": "99d757d197677d270644791f13fffe2644659985",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -75,8 +75,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-text-editor/49/gnome-text-editor-49.0.tar.xz",
-                    "sha256": "8e43b0cfa8152cd3c7630de565de2d6930e887cf2d8b84480fbf853a2bc2c8a6",
+                    "url": "https://download.gnome.org/sources/gnome-text-editor/49/gnome-text-editor-49.1.tar.xz",
+                    "sha256": "f0448f247bb5979a50c60222c44c4511880ad474e25495765e5ed2246e54dbb1",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-text-editor"
