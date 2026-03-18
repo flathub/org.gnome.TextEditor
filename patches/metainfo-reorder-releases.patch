@@ -1,0 +1,77 @@
+From 7b4cc5671cbe4b551b7fc4b079d8d9ed90cd9aff Mon Sep 17 00:00:00 2001
+From: Maximiliano Sandoval <msandova@gnome.org>
+Date: Wed, 18 Mar 2026 20:52:05 +0100
+Subject: [PATCH 1/2] metainfo: Mark development releases as such
+
+And replace dots with ~ in devel versions.
+
+For better or worse, according to appstreamcli:
+
+```
+$ appstreamcli vercmp 50.rc 50.0
+50.rc >> 50.0
+```
+
+See [1] for more details.
+
+[1] https://www.freedesktop.org/software/appstream/docs/chap-AppStream-Misc.html#spec-vercmp-algorithm
+---
+ data/org.gnome.TextEditor.metainfo.xml.in.in | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/data/org.gnome.TextEditor.metainfo.xml.in.in b/data/org.gnome.TextEditor.metainfo.xml.in.in
+index 89448b3..c042fa4 100644
+--- a/data/org.gnome.TextEditor.metainfo.xml.in.in
++++ b/data/org.gnome.TextEditor.metainfo.xml.in.in
+@@ -54,8 +54,8 @@
+ 
+   <releases>
+     <release version="50.0" date="2026-03-16"/>
+-    <release version="50.rc" date="2025-02-23"/>
+-    <release version="50.beta" date="2025-01-29"/>
++    <release version="50~rc" date="2025-02-23" type="development" />
++    <release version="50~beta" date="2025-01-29" type="development"/>
+     <release version="49.0" date="2025-09-12"/>
+   </releases>
+ </component>
+-- 
+GitLab
+
+
+From cda02a3bdd70a009d8a84ab51aee12b87fd5e9b4 Mon Sep 17 00:00:00 2001
+From: Maximiliano Sandoval <msandova@gnome.org>
+Date: Wed, 18 Mar 2026 20:23:53 +0100
+Subject: [PATCH 2/2] Revert "build: squash appstream"
+
+Now that versions are sorted we pass appstreamcli validate.
+
+This reverts commit fa7f3bb7f79819bff5a63b729796c8f7b8ea0e03.
+---
+ data/meson.build | 11 ++++-------
+ 1 file changed, 4 insertions(+), 7 deletions(-)
+
+diff --git a/data/meson.build b/data/meson.build
+index d01af60..006c622 100644
+--- a/data/meson.build
++++ b/data/meson.build
+@@ -42,13 +42,10 @@ appstream_file = i18n.merge_file(
+ 
+ appstreamcli = find_program('appstreamcli', required: false)
+ if appstreamcli.found()
+-# url-redefined breaks from our .in.in files
+-#  test('Validate appstream file', appstreamcli,
+-#    args: ['validate', '--no-net', '--explain', appstream_file,
+-#            '--override', 'developer-name-tag-deprecated=info',
+-#            '--override', 'url-redefined=info'],
+-#    workdir: meson.current_build_dir()
+-#  )
++  test('Validate appstream file', appstreamcli,
++    args: ['validate', '--no-net', '--explain', appstream_file],
++    workdir: meson.current_build_dir()
++  )
+ endif
+ 
+ # D-Bus service file.
+-- 
+GitLab
+

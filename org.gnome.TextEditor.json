@@ -85,6 +85,10 @@
                         "type": "gnome",
                         "name": "gnome-text-editor"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "patches/metainfo-reorder-releases.patch"
                 }
             ]
         }
