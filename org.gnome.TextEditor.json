@@ -41,8 +41,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/editorconfig/editorconfig-core-c.git",
-                    "tag": "v0.12.10",
-                    "commit": "99d757d197677d270644791f13fffe2644659985",
+                    "tag": "v0.12.11",
+                    "commit": "0ba157eff167c1b2d1bc0c3e13975b7a73fb9d25",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
@@ -79,8 +79,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-text-editor/50/gnome-text-editor-50.0.tar.xz",
-                    "sha256": "9dc299da4daa085423b5d48db59f0021ad55e74143a5cb8ab2e5ffe17967f45b",
+                    "url": "https://download.gnome.org/sources/gnome-text-editor/50/gnome-text-editor-50.1.tar.xz",
+                    "sha256": "f68036b09d378faa883bfe936e479c6ff37027c2ffed101daf912df70c51d0e6",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-text-editor"
