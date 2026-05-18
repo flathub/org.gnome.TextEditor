@@ -47,10 +47,6 @@
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/fix-strncpy-buffer-truncation.patch"
                 }
             ]
         },
@@ -85,10 +81,6 @@
                         "type": "gnome",
                         "name": "gnome-text-editor"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/metainfo-reorder-releases.patch"
                 }
             ]
         }
