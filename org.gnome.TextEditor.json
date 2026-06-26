@@ -41,11 +41,14 @@
                 {
                     "type": "git",
                     "url": "https://github.com/editorconfig/editorconfig-core-c.git",
-                    "tag": "v0.12.11",
-                    "commit": "0ba157eff167c1b2d1bc0c3e13975b7a73fb9d25",
+                    "tag": "v0.12.5",
+                    "commit": "f6b0ca395149b5a2fbd56a488cae30306a58170f",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^v([\\d.]+)$"
+                        "tag-pattern": "^v([\\d.]+)$",
+                        "versions": {
+                            "==": "0.12.5"
+                        }
                     }
                 }
             ]
