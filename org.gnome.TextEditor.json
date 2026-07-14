@@ -17,6 +17,7 @@
     ],
     "cleanup": [
         "/include",
+        "/lib/cmake",
         "/lib/girepository-1.0",
         "/lib/pkgconfig",
         "/man",
