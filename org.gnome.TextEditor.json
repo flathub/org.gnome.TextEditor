@@ -1,7 +1,7 @@
 {
     "id": "org.gnome.TextEditor",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
+    "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-text-editor",
     "finish-args": [
@@ -78,8 +78,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/gnome-text-editor/50/gnome-text-editor-50.1.tar.xz",
-                    "sha256": "f68036b09d378faa883bfe936e479c6ff37027c2ffed101daf912df70c51d0e6",
+                    "url": "https://download.gnome.org/sources/gnome-text-editor/51/gnome-text-editor-51.0.tar.xz",
+                    "sha256": "2b76e6da1506346c54b36ba1a3aeedcd28f4cb7d6a8793d217f209456c92dd4c",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "gnome-text-editor"
